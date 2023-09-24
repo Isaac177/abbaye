@@ -14,7 +14,7 @@ export default {
         'more-lighter-shade': '#A37C74',
 
         // Accent Colors
-        'complementary': '#2D4B4A',
+        'complementary': '#e8d4d4',
         'analogous-1': '#4B3C2D',
         'analogous-2': '#4B3D2D',
 
