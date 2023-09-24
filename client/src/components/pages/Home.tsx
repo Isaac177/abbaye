@@ -1,12 +1,12 @@
 import HeroSection from "../hero-section/HeroSection.tsx";
 import React from "react";
-import NewSection from "../news-section/NewSection.tsx";
+import InfoSection from "../info-section/InfoSection.tsx";
 
 const Home:React.FC = () => {
     return (
         <div className="bg-white">
             <HeroSection />
-            <NewSection />
+            <InfoSection />
         </div>
     )
 };
