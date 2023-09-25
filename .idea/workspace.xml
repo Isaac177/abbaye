@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="301fa5ef-f14f-44b9-b0f2-be19a62234a4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/general/SectionHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/general/SectionHeader.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,12 +25,13 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/client" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -49,7 +51,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "<unknown>",
+    "git-widget-placeholder": "master",
     "javascript.nodejs.core.library.configured.version": "20.6.1",
     "javascript.nodejs.core.library.typings.version": "20.6.1",
     "last_opened_file_path": "/Users/admin/Documents/mdc/client",
@@ -60,6 +62,7 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "/Users/admin/Documents/mdc/client/node_modules/typescript/lib",
+    "two.files.diff.last.used.file": "/Users/admin/Documents/mdc/client/src/components/about-section/AboutSection.tsx",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -83,7 +86,8 @@
       <workItem from="1695451171803" duration="2231000" />
       <workItem from="1695454273109" duration="318000" />
       <workItem from="1695454751704" duration="18554000" />
-      <workItem from="1695563452873" duration="10613000" />
+      <workItem from="1695563452873" duration="21266000" />
+      <workItem from="1695617404737" duration="7546000" />
     </task>
     <servers />
   </component>
