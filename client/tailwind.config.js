@@ -1,8 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 
+import {nextui} from "@nextui-org/react";
 
 export default {
-  content: ["./src/**/*.{html,js,jsx,tsx,authControllers.ts}"],
+  content: [
+      "./src/**/*.{html,js,jsx,tsx,authControllers.ts}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
+  ],
+
   theme: {
     extend: {
       colors: {
@@ -16,7 +21,7 @@ export default {
         // Accent Colors
         'complementary': '#e8d4d4',
         'analogous-1': '#4B3C2D',
-        'analogous-2': '#4B3D2D',
+        'analogous-2': '#ece1df',
 
         // Text Colors
         'light-text': '#F5F5F5',
@@ -28,4 +33,5 @@ export default {
         }
     },
   },
+  plugins: [nextui()]
 }

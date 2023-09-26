@@ -3,6 +3,7 @@ import React from "react";
 import InfoSection from "../info-section/InfoSection.tsx";
 import AboutSection from "../about-section/AboutSection.tsx";
 import ProductSection from "../product-section/ProductSection.tsx";
+import AdSection from "../ad-section/AdSection.tsx";
 
 const Home:React.FC = () => {
     return (
@@ -11,6 +12,7 @@ const Home:React.FC = () => {
             <InfoSection />
             <AboutSection />
             <ProductSection />
+            <AdSection />
         </div>
     )
 };

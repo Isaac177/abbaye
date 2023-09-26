@@ -17,7 +17,7 @@ const AboutSection = () => {
 */}
             </div>
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h1 className="absolute text-3xl font-bold tracking-tight text-white sm:text-4xl z-10">Nos produits</h1>
+                <h1 className="absolute text-3xl font-bold tracking-tight text-dark-text sm:text-4xl z-10">Nos produits</h1>
             </div>
             <div className="mx-auto max-w-7xl py-32 px-6 lg:px-8">
                 <div className="flex flex-wrap justify-between lg:mx-0 relative">
