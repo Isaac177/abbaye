@@ -13,7 +13,7 @@ const Home:React.FC = () => {
             <InfoSection />
             <AboutSection />
             <ProductSection />
-            <AdSection isOpen/>
+            <AdSection isOpen onClose={()=>{}} onOpen={()=>{}}/>
             <Footer />
         </div>
     )
