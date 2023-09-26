@@ -5,12 +5,10 @@ import solenity from "../../assets/images/jesus.png";
 import hotel from "../../assets/images/hotellerie.jpg";
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import { config } from '../../../config';
 import {Card, CardHeader, CardFooter, Image, Button, useDisclosure} from "@nextui-org/react";
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import Schedule from "./Schedule.tsx";
-
 
 interface AdSectionProps {
     onOpen: () => void;
@@ -19,7 +17,9 @@ interface AdSectionProps {
 }
 
 
-mapboxgl.accessToken = config.mapboxToken;
+
+mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN;
+
 
 const AdSection: React.FC<AdSectionProps> = () => {
 
