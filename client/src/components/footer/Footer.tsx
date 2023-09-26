@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
                 <div className="container mx-auto p-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 ">
                         <div>
-                            <h3 className="font-bold">Spiritualité</h3>
+                            <h3 className="font-bold mb-5">Spiritualité</h3>
                             <ul>
                                 <li className={liStyles}>Les constitutions de l’Ordre</li>
                                 <li className={liStyles}>La Liturgie des Heures</li>
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
                             </ul>
                         </div>
                         <div>
-                            <h3 className="font-bold">Histoire</h3>
+                            <h3 className="font-bold mb-5">Histoire</h3>
                             <ul>
                                 <li className={liStyles}>Ecce Elongavi…</li>
                                 <li className={liStyles}>Chronologie détaillée</li>
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
                             </ul>
                         </div>
                         <div>
-                            <h3 className="font-bold">Les abbés</h3>
+                            <h3 className="font-bold mb-5">Les abbés</h3>
                             <ul>
                                 <li className={liStyles}>Dom Dominique Lacaes</li>
                                 <li className={liStyles}>Dom Sébastien Wyart</li>
@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
                             </ul>
                         </div>
                         <div>
-                            <h3 className="font-bold">Pour se rendre au Mont des Cats</h3>
+                            <h3 className="font-bold mb-5">Pour se rendre au Mont des Cats</h3>
                             <ul>
                                 <li className={liStyles}>Visiteurs d’une heure</li>
                                 <li className={liStyles}>Hôtellerie</li>
