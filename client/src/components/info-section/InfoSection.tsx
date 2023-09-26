@@ -14,6 +14,8 @@ interface PostType {
     category: { title: string; href: string };
     author: AuthorType;
     image: string;
+    likes: number;
+    comments: number;
 }
 
 interface AuthorType {
@@ -36,6 +38,8 @@ const posts: PostType[] = [
             imageUrl:
             abbaye,
         },
+        likes: 122,
+        comments: 12,
         image:
             'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhdXR5JTIwY2F0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
     },
@@ -53,6 +57,8 @@ const posts: PostType[] = [
             imageUrl:
             abbaye,
         },
+        likes: 200,
+        comments: 10,
         image:
             'https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmVhdXR5JTIwY2F0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
     },
@@ -70,6 +76,8 @@ const posts: PostType[] = [
             imageUrl:
             abbaye,
         },
+        likes: 21,
+        comments: 9,
         image:
             'https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmVhdXR5JTIwY2F0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
     }

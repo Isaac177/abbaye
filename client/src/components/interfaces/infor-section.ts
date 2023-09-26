@@ -13,6 +13,8 @@ export interface PostType {
     category: { title: string; href: string };
     author: AuthorType;
     image: string;
+    likes: number;
+    comments: number;
 }
 
 export interface PostProps {

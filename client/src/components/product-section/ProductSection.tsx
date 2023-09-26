@@ -1,8 +1,8 @@
 import React from 'react';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // make sure to import the AOS stylesheet
+import 'aos/dist/aos.css';
 import beer from '../../assets/images/beer.jpeg';
-import bgImg from '../../assets/images/abstract.jpg';
+import bgImg from '../../assets/images/bg-shape.svg';
 const AboutSection = () => {
     React.useEffect(() => {
         AOS.init();
@@ -11,8 +11,10 @@ const AboutSection = () => {
     const abstract = bgImg;
     return (
         <div className="overflow-hidden sm:py-16 relative">
-            <div className="absolute inset-0 filter brightness-10 opacity-125" style={{backgroundImage: `url(${abstract})`}}>
+            <div className="absolute inset-0 filter brightness-10 opacity-125" style={{backgroundImage: `url(${abstract})`, backgroundSize: 'cover', backgroundPosition: 'center'}} aria-hidden="true">
+{/*
                 <div className="absolute inset-0 bg-gradient-to-r from-more-lighter-shade to-darker-shade mix-blend-multiply" aria-hidden="true" />
+*/}
             </div>
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h1 className="absolute text-3xl font-bold tracking-tight text-white sm:text-4xl z-10">Nos produits</h1>
@@ -35,10 +37,10 @@ const AboutSection = () => {
                          data-aos-duration="1000"
                          data-aos-easing="ease-in-out"
                     >
-                        <div className="lg:max-w-lg backdrop-blur-md bg-opacity-50 p-4 border border-gray-300 rounded-lg shadow-amber-950-3xl bg-white">
+                        <div className="lg:max-w-lg backdrop-blur-xl bg-opacity-50 p-4 border border-gray-300 rounded-lg shadow-amber-950-3xl bg-white">
                             <div className="bg-dark-div p-4 rounded">
 
-                                <p className="mt-6 text-lg leading-8">
+                                <p className="mt-6 text-lg font-bold leading-8">
                                     Le travail permet à la communauté de vivre du travail de ses mains.
                                     Une fromagerie est la principale ressource de la communauté.
                                     Outre ce travail de type industriel, il y a encore le Magasin et la vente de la Bière.
@@ -48,7 +50,7 @@ const AboutSection = () => {
 
                                     <a
                                         href="#"
-                                        className="inline-flex items-center justify-center px-5 py-3 text-base font-medium rounded-lg bg-more-lighter-shade text-white hover:bg-darker-shade"
+                                        className="inline-flex font-bold items-center justify-center px-5 py-3 text-base rounded-lg bg-more-lighter-shade text-white hover:bg-darker-shade"
                                     >
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mr-2">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
