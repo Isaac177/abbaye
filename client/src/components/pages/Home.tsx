@@ -8,12 +8,12 @@ import Footer from "../footer/Footer.tsx";
 
 const Home:React.FC = () => {
     return (
-        <div className="bg-white">
+        <div className="bg-white overflow-hidden flex flex-col">
             <HeroSection />
             <InfoSection />
             <AboutSection />
             <ProductSection />
-            <AdSection/>
+            <AdSection isOpen/>
             <Footer />
         </div>
     )

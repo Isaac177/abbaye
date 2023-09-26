@@ -78,7 +78,7 @@ const Schedule: React.FC<SolemnityProps> = ({isOpen, scheduleType, onClose}) => 
                         <ModalHeader className="flex flex-col gap-1 text-3xl">{modalTitle}</ModalHeader>
                         <ModalBody>
                             {scheduleData.map((item, index) => (
-                                <div key={index} className="flex items-center space-x-4">
+                                <div key={index} className="flex items-center space-x-4 overflow-scroll">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#f67474" className="w-6 h-6">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>

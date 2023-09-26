@@ -56,7 +56,7 @@ const AdSection: React.FC<AdSectionProps> = () => {
 
             <SectionHeader sectionTitle='Séjourner chez nous' sectionSmallText=''/>
 
-            <div className="flex flex-row justify-between lg:mx-0 relative gap-5 mt-20">
+            <div className="lg:flex lg:flex-row justify-between lg:mx-0 relative gap-5 mt-20 block">
                 <div className="lg:w-1/3 flex flex-col gap-5"
                         data-aos="fade-right"
                         data-aos-offset="200"
@@ -81,7 +81,7 @@ const AdSection: React.FC<AdSectionProps> = () => {
                         <p className="text-lg leading-8 hover:text-white text-gray-500 text-center">Horaire - Solennité (dimanche et jours chomés)</p>
                     </div>
                 </div>
-                <div className="lg:w-full z-10"
+                <div className="lg:w-full z-10 mt-10 lg:mt-0 h-96 lg:h-auto"
                         data-aos="fade-left"
                         data-aos-offset="200"
                         data-aos-delay="50"
@@ -107,7 +107,7 @@ const AdSection: React.FC<AdSectionProps> = () => {
                                     src="/images/breathing-app-icon.jpeg"
                                 />
                                 <div className="flex flex-col">
-                                    <p className="text-tiny text-white/60">Fidèles à la tradition bénédictine, nous accueillons en notre hôtellerie
+                                    <p className="text-tiny text-white/60 sm:text-ellipsis overflow-ellipsis">Fidèles à la tradition bénédictine, nous accueillons en notre hôtellerie
                                         les personnes qui souhaitent une pause dans leur vie, une retraite spirituelle, individuelle ou en groupe, une évaluation dans leur itinéraire,
                                         une écoute fraternelle.</p>
                                 </div>
@@ -117,7 +117,7 @@ const AdSection: React.FC<AdSectionProps> = () => {
                     </Card>
                 </div>
             </div>
-            <div className="flex flex-col h-screen justify-between lg:mx-0 relative gap-10 mt-20"
+            <div className="flex flex-col h-screen justify-between lg:mx-0 relative gap-10 lg:mt-20 lg:mb-96 m-10 mb-96"
                     data-aos="fade-up"
                     data-aos-offset="200"
                     data-aos-delay="50"
@@ -126,7 +126,7 @@ const AdSection: React.FC<AdSectionProps> = () => {
             >
                 <div
                     ref={mapContainerRef}
-                    className="w-full h-full rounded-xl p-10 z-10"
+                    className="w-full h-full rounded-xl z-10 mb-0"
                     style={{ height: '500px', minHeight: '400px' }}
                 />
             </div>
