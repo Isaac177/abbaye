@@ -16,7 +16,7 @@ const SectionHeader: React.FC<sectionHeaderProps> = ({sectionTitle, sectionSmall
              data-aos-easing="ease-in-out"
         >
             <h2 className="text-3xl font-bold tracking-tight text-dark-text sm:text-4xl">{sectionTitle}</h2>
-            <p className="mt-2 italic text-lg leading-8 text-gray-500">
+            <p className="mt-2 italic text-lg font-serif leading-8 text-gray-500">
                 {sectionSmallText}
             </p>
         </div>

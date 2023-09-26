@@ -12,6 +12,7 @@ export default {
     extend: {
       colors: {
         'main-color': '#4B302D',
+        'secondary-color': '#f67474',
 
         // Secondary Colors
         'lighter-shade': '#73514A',

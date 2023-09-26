@@ -9,7 +9,7 @@ import { config } from '../../../config';
 import {Card, CardHeader, CardFooter, Image, Button, useDisclosure} from "@nextui-org/react";
 import AOS from "aos";
 import 'aos/dist/aos.css';
-import Solemnity from "./Solemnity.tsx";
+import Schedule from "./Schedule.tsx";
 
 
 interface AdSectionProps {
@@ -22,6 +22,8 @@ interface AdSectionProps {
 mapboxgl.accessToken = config.mapboxToken;
 
 const AdSection: React.FC<AdSectionProps> = () => {
+
+    const [scheduleType, setScheduleType] = React.useState<'week' | 'solemnity'>('week');
 
     const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -50,7 +52,7 @@ const AdSection: React.FC<AdSectionProps> = () => {
 
 
     return(
-        <div className="mx-auto max-w-7xl py-32 px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl py-32 px-6 lg:px-8" style={{ marginBottom: '-46rem'}}>
 
             <SectionHeader sectionTitle='Séjourner chez nous' sectionSmallText=''/>
 
@@ -65,7 +67,7 @@ const AdSection: React.FC<AdSectionProps> = () => {
                     <div className="flex flex-col rounded-xl items-center bg-analogous-2 p-10 w-full gap-y-8
                     hover:shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-1
                     hover:scale-100 hover:bg-lighter-shade cursor-pointer"
-                         onClick={() => onOpen()}
+                         onClick={() => { onOpen(); setScheduleType('week'); }}
                     >
                         <img src={week} alt="week" className='w-24 h-24 opacity-50'/>
                         <p className="text-lg hover:text-white leading-8 text-gray-500 text-center">Horaire - Semaine (du lundi au samedi)</p>
@@ -73,7 +75,7 @@ const AdSection: React.FC<AdSectionProps> = () => {
                     <div className="flex flex-col rounded-xl items-center bg-analogous-2 p-10 w-full gap-y-8
                     hover:shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-1
                     hover:scale-100 hover:bg-lighter-shade cursor-pointer"
-                            onClick={() => onOpen()}
+                         onClick={() => { onOpen(); setScheduleType('solemnity'); }}
                     >
                         <img src={solenity} alt="solenity" className='w-24 h-24 opacity-50'/>
                         <p className="text-lg leading-8 hover:text-white text-gray-500 text-center">Horaire - Solennité (dimanche et jours chomés)</p>
@@ -124,11 +126,11 @@ const AdSection: React.FC<AdSectionProps> = () => {
             >
                 <div
                     ref={mapContainerRef}
-                    className="w-full h-full rounded-xl p-10"
+                    className="w-full h-full rounded-xl p-10 z-10"
                     style={{ height: '500px', minHeight: '400px' }}
                 />
             </div>
-            <Solemnity isOpen={isOpen} onOpen={onOpen} onClose={onClose}/>
+            <Schedule isOpen={isOpen} onClose={onClose} scheduleType={scheduleType}  onOpen={onOpen}/>
         </div>
     )
 };
